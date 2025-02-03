@@ -5,3 +5,4 @@ let person = {
 }
 
 console.log(person.firstname);
+console.log(person.lastname);

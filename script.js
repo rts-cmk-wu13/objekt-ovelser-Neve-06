@@ -9,8 +9,13 @@ let studentListDiv = document.querySelector(".student-list")
 students.forEach(student => {
     let studentDiv = document.createElement("div");
     studentDiv.classList.add("student")
-    studentDiv.textContent = `${student.name}, Alder: ${student.age}, Uddannelse: ${student.course}`;
-    studentListDiv.appendChild(studentDiv);
+    let studentHeadline = document.createElement("h2");
+    studentHeadline.textContent = student.name;
+    let studentInfo = document.createElement("p");
+    studentInfo.classList.add("student__info")
+    studentInfo.textContent = `Alder: ${student.age}, Uddannelse: ${student.course}`;
+    studentListDiv.append(studentHeadline, studentInfo);
+    studentListDiv.appendChild(studentDiv)
 })
 
 console.log(studentListDiv);

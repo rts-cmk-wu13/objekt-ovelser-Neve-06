@@ -7,7 +7,7 @@ let person = {
     hobbies: ["history", "writing", "programming" ],
     pet:{
         type: "spooder",
-        petname: "man"
+        name: "man"
     },
     
 }
@@ -23,3 +23,6 @@ person.hobbies.forEach(function(hobby){
     console.log(hobby);
     
 })
+
+console.log(person.pet.type);
+console.log(person.pet.name);

@@ -1,14 +1,25 @@
 let person = {
     firstname: "Tim",
     lastname: "Pyke",
+    married: "true",
     age: 48,
     hometown: "Roskilde",
-    pet: "spooder",
-    petname: "man"
+    hobbies: ["history", "writing", "programming" ],
+    pet:{
+        type: "spooder",
+        petname: "man"
+    },
+    
 }
 
-console.log(person.firstname);
-console.log(person.lastname);
+// console.log(person.firstname);
+// console.log(person.lastname);
 
-console.log(person["pet"]);
-console.log(person["petname"]);
+// console.log(person["pet"]);
+// console.log(person["petname"]);
+
+
+person.hobbies.forEach(function(hobby){
+    console.log(hobby);
+    
+})

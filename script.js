@@ -14,7 +14,7 @@ students.forEach(student => {
     let studentInfo = document.createElement("p");
     studentInfo.classList.add("student__info")
     studentInfo.textContent = `Alder: ${student.age}, Uddannelse: ${student.course}`;
-    studentListDiv.append(studentHeadline, studentInfo);
+    studentDiv.append(studentHeadline, studentInfo);
     studentListDiv.appendChild(studentDiv)
 })
 

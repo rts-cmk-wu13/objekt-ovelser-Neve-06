@@ -1,3 +1,5 @@
+// ---opgave 1---
+
 // let person = {
 //     firstname: "Tim",
 //     lastname: "Pyke",

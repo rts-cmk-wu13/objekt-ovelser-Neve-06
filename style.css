@@ -1,0 +1,11 @@
+.student{
+    color: black;
+    padding: 2rem;
+    background-color: gray;
+}
+
+.student__info{
+    background-color: azure;
+    padding: 1rem;
+    color: black;
+}
